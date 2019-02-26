@@ -1,0 +1,51 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 1rem;
+}
+
+button {
+    color: #ffffff;
+    background-color: #87CEFF; 
+    font-size: 2rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 0 1rem 1rem 0;
+}
+
+form {
+    float: right;
+    width: 20%;
+    margin: 1rem;
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#button-input {
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.animal-div {
+    display: inline-block;
+    margin-right: .5rem;
+    margin-top: .5rem;
+}
+
+.gif-text {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
+
+.gif {
+    height: 16rem;
+}
