@@ -1,12 +1,16 @@
-* {
-    font-family: 'PT Sans', sans-serif;
-}
-
 body {
+    font-family: 'PT Sans', sans-serif;
     margin: 1rem;
 }
 
+#animal-buttons {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%
+}
+
 button {
+    font-family: 'PT Sans', sans-serif;
     color: #ffffff;
     background-color: #87CEFF; 
     font-size: 2rem;
@@ -15,10 +19,13 @@ button {
     margin: 0 1rem 1rem 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 form {
-    float: right;
-    width: 20%;
-    margin: 1rem;
+    display: inline-block;
+    width: 24%;
 }
 
 label {
@@ -32,6 +39,11 @@ label {
     height: 2rem;
     width: 100%;
     margin-bottom: .5rem;
+}
+
+#gifs-appear-here {
+    display: inline-block;
+    width: 75%;
 }
 
 .animal-div {
@@ -48,4 +60,29 @@ label {
 
 .gif {
     height: 16rem;
+}
+
+.link,
+.add-favourite,
+.remove-favourite {
+    color: blue;
+}
+
+.link:hover,
+.add-favourite:hover,
+.remove-favourite:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+#favourites {
+    border-top: .2rem dotted #87CEFF;
+    display: inline-block;
+    vertical-align: top;
+    width: 24%
+}
+
+h2 {
+    color: #87CEFF;
+    font-size: 2rem;
 }
