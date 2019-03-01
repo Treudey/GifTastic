@@ -1,72 +1,64 @@
-body {
-    font-family: 'PT Sans', sans-serif;
-    margin: 1rem;
-}
+body,
+button,
+.gif-text { font-family: 'PT Sans', sans-serif; }
 
-#animal-buttons {
-    display: inline-block;
-    vertical-align: top;
-    width: 75%
-}
+body { margin: 1rem; }
+
+#animal-buttons,
+form,
+#gifs-appear-here,
+.animal-div,
+#favourites { display: inline-block; }
+
+#animal-buttons,
+#gifs-appear-here { width: 75%; }
+
+#animal-buttons,
+#favourites { vertical-align: top; }
+
+button,
+h2 { font-size: 2rem; }
 
 button {
-    font-family: 'PT Sans', sans-serif;
     color: #ffffff;
     background-color: #87CEFF; 
-    font-size: 2rem;
     border: none;
     border-radius: .5rem;
     margin: 0 1rem 1rem 0;
 }
 
-button:hover {
-    cursor: pointer;
-}
+button:hover { cursor: pointer; }
 
-form {
-    display: inline-block;
-    width: 24%;
-}
+form,
+#favourites { width: 24%; }
 
-label {
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 1.5;
-}
+label,
+#button-input { font-size: 1.3rem; }
+
+label,
+.gif-text { font-weight: bold; }
+
+label { line-height: 1.5; }
 
 #button-input {
-    font-size: 1.3rem;
     height: 2rem;
     width: 100%;
     margin-bottom: .5rem;
 }
 
-#gifs-appear-here {
-    display: inline-block;
-    width: 75%;
-}
 
 .animal-div {
-    display: inline-block;
     margin-right: .5rem;
     margin-top: .5rem;
 }
 
-.gif-text {
-    font-family: 'PT Sans', sans-serif;
-    font-weight: bold;
-    margin-bottom: .3rem;
-}
+.gif-text { margin-bottom: .3rem; }
 
-.gif {
-    height: 16rem;
-}
+.gif { height: 16rem; }
 
 .link,
 .add-favourite,
-.remove-favourite {
-    color: blue;
-}
+.remove-favourite { color: blue; }
 
 .link:hover,
 .add-favourite:hover,
@@ -75,14 +67,11 @@ label {
     cursor: default;
 }
 
-#favourites {
-    border-top: .2rem dotted #87CEFF;
-    display: inline-block;
-    vertical-align: top;
-    width: 24%
-}
+#favourites { border-top: .2rem dotted #87CEFF; }
 
-h2 {
-    color: #87CEFF;
-    font-size: 2rem;
+h2 { color: #87CEFF; }
+
+@media only screen and (max-width: 1280px) {
+
+    .gif { height: 10.75rem; }    
 }

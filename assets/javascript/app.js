@@ -155,7 +155,7 @@ $(document).ready(function() {
         var animal = $(this).attr("data-animal");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             animal + "&api_key=H6XLihFQc94nVJy5yjeqGcZOlNLBd7xf&limit=10";
-    
+
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -194,12 +194,14 @@ $(document).ready(function() {
         }
     });
 
-    // Click event forcreating more GIFS which makes another ajax call and uses the next 10 GIFS from it
+    // Click event forcreating more GIFS which makes another ajax call and uses 
+    // the next 10 GIFS from it
     $(document).on("click", "#more-gifs", function() {
         
         var animal = $(this).attr("data-animal");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-            animal + "&api_key=H6XLihFQc94nVJy5yjeqGcZOlNLBd7xf&limit=" + (numOfGIFs + 10);
+            animal + "&api_key=H6XLihFQc94nVJy5yjeqGcZOlNLBd7xf&limit=" + 
+            (numOfGIFs + 10);
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -213,8 +215,6 @@ $(document).ready(function() {
 
     // Click event for the download link
     $(document).on("click", ".link", function() {
-
-        // gets the title of the gif to create the filename GIF for download
         var parentID = $(this).parent().attr("id");
         var url = $("#" + parentID + "img").attr("data-animate");
         var name = $("#" + parentID + "title").text();  
