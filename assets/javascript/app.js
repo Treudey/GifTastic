@@ -117,13 +117,13 @@ function downloadResource(url, filename) {
 ******************************************************* */
 $(document).ready(function() {
     // If the favNumArray is not stored in LocalStorage it creates a new one to work with
-    if (favNumArray === null) {
+    if (favNumArray[i] === null) {
         favNumArray = [0];
     }
 
     // Loops through all the numbers in favNumArray except the last one and creates the appropriate GIF 
     for (var i = 0; i < favNumArray.length-1; i++) {
-        if (favNumArray[i]) {
+        if (typeof favNumArray[i] === "number") {
             var id = favNumArray[i];
             createFavGIF(id);
         }
