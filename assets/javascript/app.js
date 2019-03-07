@@ -117,7 +117,7 @@ function downloadResource(url, filename) {
 ******************************************************* */
 $(document).ready(function() {
     // If the favNumArray is not stored in LocalStorage it creates a new one to work with
-    if (favNumArray[i] === null) {
+    if (!favNumArray) {
         favNumArray = [0];
     }
 
