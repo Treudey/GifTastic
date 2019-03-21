@@ -1,6 +1,8 @@
 # GifTastic
 
-This application let's you quickly find cute animal GIFs where you can choose from several buttons generating animal GIFs or add your own buttons. You can then download GIfs you like or save them to a 'favourites section' which will persist on the site when you refrsh the page or close your browser.
+This application let's you quickly find cute animal GIFs where you can choose from several buttons generating animal GIFs or add your own buttons. You can then download GIFs you like or save them to a `favourites section` which will persist on the site when you refrsh the page or close your browser.
+
+[Click here to go to GifTastic!](https://treudey.github.io/GifTastic)
 
 ### Overview
 
@@ -14,11 +16,11 @@ This application let's you quickly find cute animal GIFs where you can choose fr
 
 * There is a form that takes the value from a user input box and creates a button that is added alongside the rest of the buttons on the page.
 
-* Users can request additional gifs to be added to the page by clicking the 'more GIFs' button.
+* Users can request additional gifs to be added to the page by clicking the `more GIFs` button.
    * Each request adds 10 gifs to the page, but doesn't overwrite the existing gifs.
 
 * There is a 1-click download button for each gif, that works across device types.
 
-* Users can add their favorite gifs to a `favorites` section.
+* Users can add their favourite gifs to a `favourites section`.
    * This persists when they select or add a new topic.
    * This section also persists even when the page is reloaded or the browser restarted (via localStorage).
